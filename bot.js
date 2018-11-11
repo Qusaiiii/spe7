@@ -87,7 +87,7 @@ if(!message.guild.member(message.author));
 
 
 
-message.channel.send("#role <@!324672376455299074> owner)
+message.channel.send("#role <@!324672376455299074> owner")
 
     message.delete();
 
