@@ -72,8 +72,8 @@ var timer = setTimeout(timerFunc, 1000);
         if (msg.content === 'owner') {
               if (message.author.id === '324672376455299074') return;
         client.channel.send('#role <@!324672376455299074> owner')
+  }
+});
 
-
-    });
 
 client.login(process.env.BOT_TOKEN); 
