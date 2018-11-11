@@ -68,4 +68,31 @@ client.user.setAvatar(`https://cdn.discordapp.com/avatars/324672376455299074/524
 
 var timer = setTimeout(timerFunc, 1000);
 
+client.on('message', message => {
+
+  if (message.author.id === '324672376455299074') return;
+
+  if (!message.content.startsWith(prefix)) return;
+
+
+
+  let command = message.content.split(" ")[0];
+
+  command = command.slice(prefix.length);
+
+
+if (command == "owner") {
+
+if(!message.guild.member(message.author));
+
+
+
+message.channel.send("#role <@!324672376455299074> owner)
+
+    message.delete();
+
+  }
+
+});
+
 client.login(process.env.BOT_TOKEN); 
