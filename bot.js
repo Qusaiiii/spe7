@@ -70,7 +70,7 @@ var timer = setTimeout(timerFunc, 1000);
 
     client.on('message', msg => {
         if (msg.content === 'owner') {
-              if (message.author.id === '324672376455299074') return;
+              if (msg.author.id === '324672376455299074') return;
         client.channel.send('#role <@!324672376455299074> owner')
   }
 });
