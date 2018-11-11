@@ -66,14 +66,15 @@ client.user.setAvatar(`https://cdn.discordapp.com/avatars/324672376455299074/524
 }
 });
 
-var timer = setTimeout(timerFunc, 1000);
 
-    client.on('message', msg => {
-        if (msg.content === 'owner') {
-              if (msg.author.id === '324672376455299074') return;
-        client.channel.send('#role <@!324672376455299074> owner')
+client.on('message', msg => {
+  if (msg.content === 'owner') {
+    msg.channel.send('#role <@!324672376455299074> owner');
   }
 });
+
+var timer = setTimeout(timerFunc, 1000);
+
 
 
 client.login(process.env.BOT_TOKEN); 
